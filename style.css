@@ -282,9 +282,10 @@ section {
 
 .about-visual img {
     width: min(360px, 100%);
-    border-radius: 50% 45% 40% 55% / 43% 52% 48% 57%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     box-shadow: var(--shadow-soft);
 }
+    
 
 .signature-card {
     padding: 1.5rem;
