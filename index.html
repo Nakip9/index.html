@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alnaqeeb Eissa - Backend Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: radial-gradient(circle at 20% 20%, rgba(76, 201, 240, 0.15), transparent 45%),
+                        radial-gradient(circle at 80% 10%, rgba(247, 37, 133, 0.15), transparent 45%),
+                        linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #f8f9fa;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background: rgba(15, 12, 41, 0.85) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        section {
+            padding: 4.5rem 0;
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: clamp(2rem, 4vw, 2.6rem);
+            background: linear-gradient(135deg, #f72585, #7209b7, #4cc9f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .highlight {
+            color: #4cc9f0;
+        }
+
+        .custom-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-badge {
+            background: rgba(114, 9, 183, 0.15);
+            color: #d0d1ff;
+        }
+
+        footer {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#home">Alnaqeeb Eissa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-5" id="home">
+        <section class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold">Alnaqeeb Eissa</h1>
+                    <p class="lead text-light-emphasis">Junior Backend Developer &amp; Mechatronics Engineer</p>
+                    <p class="mb-4">I build pragmatic, well-tested services with Django, Flask, PostgreSQL, and Docker. My engineering background helps me translate complex requirements into reliable automation.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a class="btn btn-primary px-4" href="#contact">Get in touch</a>
+                        <a class="btn btn-outline-light px-4" href="#projects">View projects</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="nakip.jpg" class="img-fluid rounded-circle border border-3 border-light-subtle shadow" alt="Alnaqeeb Eissa portrait" style="max-width: 240px;">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center text-lg-start">
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p class="fs-5 text-light-emphasis">I design backend systems that balance clean code with operational resilience. From REST API design to cloud deployment pipelines, I value clarity, documentation, and empathetic collaboration.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <span class="badge rounded-pill skill-badge">Django</span>
+                        <span class="badge rounded-pill skill-badge">Flask</span>
+                        <span class="badge rounded-pill skill-badge">REST APIs</span>
+                        <span class="badge rounded-pill skill-badge">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title text-center mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="custom-card rounded-4 p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-code-slash me-2"></i>Backend</h3>
+                        <ul class="list-unstyled text-light-emphasis mb-0">
+                            <li>Django, Django REST Framework</li>
+                            <li>Flask &amp; FastAPI microservices</li>
+                            <li>PostgreSQL, Redis, Celery</li>
+                            <li>Testing with Pytest &amp; coverage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="custom-card rounded-4 p-4 h-100">
+                        <h3 class="h5"><i class="bi bi-hdd-network me-2"></i>Ops &amp; Tooling</h3>
+                        <ul class="list-unstyled text-light-emphasis mb-0">
+                            <li>Docker &amp; Compose</li>
+                            <li>Linux administration</li>
+                            <li>CI/CD pipelines (GitHub Actions)</li>
+                            <li>Monitoring with Prometheus &amp; Grafana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title text-center mb-5">Highlighted Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="custom-card rounded-4 p-4 h-100">
+                        <h3 class="h5">Inventory Manager</h3>
+                        <p class="text-light-emphasis">Django app with role-based permissions, audit trails, and PDF exports for warehouse teams.</p>
+                        <p class="small mb-3"><span class="highlight">Django · PostgreSQL · Bootstrap</span></p>
+                        <a class="link-light" href="#"><i class="bi bi-github me-1"></i>View repository</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card rounded-4 p-4 h-100">
+                        <h3 class="h5">API Gateway Service</h3>
+                        <p class="text-light-emphasis">Flask-based gateway with JWT authentication, throttling, and service discovery for microservices.</p>
+                        <p class="small mb-3"><span class="highlight">Flask · Redis · Docker</span></p>
+                        <a class="link-light" href="#"><i class="bi bi-github me-1"></i>View repository</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card rounded-4 p-4 h-100">
+                        <h3 class="h5">IoT Data Pipeline</h3>
+                        <p class="text-light-emphasis">FastAPI service that ingests MQTT sensor data, stores metrics, and exposes analytics dashboards.</p>
+                        <p class="small mb-3"><span class="highlight">FastAPI · InfluxDB · MQTT</span></p>
+                        <a class="link-light" href="#"><i class="bi bi-github me-1"></i>View repository</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container">
+            <h2 class="section-title text-center mb-4">Education</h2>
+            <div class="custom-card rounded-4 p-4 mx-auto" style="max-width: 720px;">
+                <h3 class="h5">B.Sc. Mechatronics &amp; Robotics</h3>
+                <p class="mb-1 text-light-emphasis">South Ural Federal University · 2028</p>
+                <p class="mb-0 small">Focused on control systems, embedded programming, and robotics research.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container text-center">
+            <h2 class="section-title mb-4">Get in Touch</h2>
+            <p class="lead text-light-emphasis">Let’s collaborate on high-impact backend systems.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
+                <a class="btn btn-outline-light d-flex align-items-center gap-2" href="mailto:alnaqeeb.eissa@example.com">
+                    <i class="bi bi-envelope-fill"></i> Email me
+                </a>
+                <a class="btn btn-outline-light d-flex align-items-center gap-2" href="https://facebook/esaa29" target="_blank" rel="noopener">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a class="btn btn-outline-light d-flex align-items-center gap-2" href="https://github.com/Nakip9" target="_blank" rel="noopener">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center small">
+        © 2025 Alnaqeeb Eissa
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
